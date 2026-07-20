@@ -39,9 +39,10 @@ A full-stack food platform connecting the Uzbek community in South Korea with au
 - Designed and built the full-stack app end-to-end with Next.js
 - Implemented multi-country phone authentication (🇰🇷 +82 · 🇺🇿 +998 · 🇷🇺 +7) with OTP verification
 - Integrated Telegram OAuth as an alternative login method — targeting Uzbek expat users who rely on Telegram daily
+- **Built an AI assistant & chatbot** — users can ask questions about dishes, get recommendations, and place orders through a conversational interface powered by an LLM
 - Deployed and optimized on Vercel with internationalization support
 
-`Next.js` `Vercel` `Phone Auth` `Telegram OAuth` `i18n`
+`Next.js` `Vercel` `Phone Auth` `Telegram OAuth` `AI Chatbot` `LLM` `i18n`
 
 ---
 
@@ -52,22 +53,24 @@ A full-stack food platform connecting the Uzbek community in South Korea with au
 - Architected and developed the full application from scratch
 - Built real-time expense tracking and budget monitoring features
 - Designed intuitive UX for financial overview and category-based spending analysis
+- **Implemented an AI assistant & chatbot** — users can query their finances in natural language (e.g. "How much did I spend on food this month?"), get AI-generated spending insights, and receive budget recommendations
 - Deployed on Vercel with a responsive mobile-first interface
 
-`Next.js` `Supabase` `Vercel` `Finance Dashboard`
+`Next.js` `Supabase` `Vercel` `AI Chatbot` `LLM` `Finance Dashboard`
 
 ---
 
 ### [Kotib](https://kotib-rouge.vercel.app/) — AI-Powered Personal Secretary
-*"Aqlli shaxsiy kotib"* — Smart personal secretary. An AI assistant that handles scheduling, task management, and intelligent note-taking.
+*"Aqlli shaxsiy kotib"* — Smart personal secretary. An AI assistant and chatbot that handles scheduling, task management, and intelligent note-taking through natural conversation.
 
 **My contributions:**
-- Built the AI core — integrated LLM APIs to power natural language task creation and management
-- Designed the agent pipeline: user input → intent parsing → structured task/note output
-- Implemented conversational memory so the assistant maintains context across sessions
+- **Built the AI assistant & chatbot core** — integrated LLM APIs to power natural language task creation, scheduling, and note management
+- Designed the agent pipeline: user message → intent parsing → structured action (create task / set reminder / generate note)
+- Implemented conversational memory so the chatbot maintains full context across sessions
+- Added proactive AI suggestions — the assistant recommends priorities and follow-ups based on the user's history
 - Full-stack development and deployment on Vercel
 
-`Next.js` `LLM API` `AI Agent` `Vercel` `Conversational AI`
+`Next.js` `LLM API` `AI Agent` `AI Chatbot` `Conversational AI` `Vercel`
 
 ---
 
