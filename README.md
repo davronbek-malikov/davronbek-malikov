@@ -1,9 +1,10 @@
 # Hi, I'm Davronbek Malikov 👋
 
-**PhD in AI Engineering · AI Agent Engineer · ML/DL Researcher · Team Lead**  
+**AI Engineer · ML/DL Engineer · Researcher · Team Lead**  
 📍 Seoul, South Korea &nbsp;|&nbsp; 📧 davronbekmalikov96@gmail.com
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat&logo=vercel&logoColor=white)](https://davronbek-portfolio.vercel.app)
+[![CV](https://img.shields.io/badge/Download_CV-4285F4?style=flat&logo=googledrive&logoColor=white)](https://davronbek-portfolio.vercel.app/cv.pdf)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/davronbek-malikov)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:davronbekmalikov96@gmail.com)
 
@@ -11,12 +12,13 @@
 
 ## 🧑‍💻 About Me
 
-I am a **PhD-level AI Engineer** who builds autonomous agent systems that work in production. Currently leading the AI engineering team at **TripleH**, shipping intelligent agents for legal analysis, financial intelligence, meeting automation, and enterprise digital twins.
+PhD-level **AI Engineer** who builds autonomous agent systems that work in production. Currently leading the AI engineering team at **TripleH** — shipping agents for legal intelligence, financial analysis, meeting automation, and enterprise digital twins.
 
-My background spans advanced mathematics, machine learning research, and full-stack AI engineering — I close the gap between rigorous research and real-world deployment. I have authored **5 first-author publications** in SCIE journals and international conferences, primarily on machine learning applications in sports analytics.
+Experienced in the full AI stack: **Local LLM fine-tuning** (LoRA/QLoRA), **Graph RAG** and standard RAG systems, **Mixture of Agents**, self-improving AI pipelines, and full-stack deployment on cloud and on-premise infrastructure.
 
-- 🔬 **Research focus:** ML/DL, sports analytics, LLMs, autonomous agent systems
-- 🏗️ **Engineering focus:** AI agents, RAG systems, LLM fine-tuning, enterprise deployment
+- 🤖 **AI Engineering:** Multi-agent orchestration, Mixture of Agents (MoA), centralized agent control, self-improvement loops
+- 🔬 **Research:** Supervised & Unsupervised ML (tabular), Computer Vision, LLMs, sports analytics
+- 🧠 **LLMs:** Local LLM deployment (Ollama), fine-tuning (LoRA/QLoRA/DPO/RLHF), Graph RAG, RAG pipelines
 - 🎓 **Teaching:** Advanced courses in ML, DL, NLP, and LLMs
 - 🌍 **Languages:** English · Uzbek · Turkish · Russian · Korean
 
@@ -24,53 +26,51 @@ My background spans advanced mathematics, machine learning research, and full-st
 
 ## 💼 Current Role
 
-**AI Engineer & Team Lead @ TripleH** *(Jan 2026 – Present)*  
-Leading a team building production-grade autonomous AI agents and enterprise AI infrastructure.
+**AI Engineer & Team Lead @ TripleH** *(Jan 2026 – Present)*
+
+| Product | Description |
+|---------|-------------|
+| **VIP Agent** | Centralized AI Orchestration Platform — controls a network of specialized sub-agents from a unified hub |
+| **Law Agent** | Smart Legal Chatbot using Mixture of Decisions across multiple LLMs for Korean Supreme Court precedents |
+| **Meeting Agent** | Smart Meeting Agent with Voice Recognition — on-premise transcription to structured minutes |
+| **Enterprise System** | On-premise platform — all agents run locally, no external API calls, full data privacy |
+| **Digital Workers** | Per-employee AI agents (Digital Twins) that learn and act autonomously on behalf of each worker |
 
 ---
-
 
 ## 🚀 Projects
 
 ### [Palov](https://www.palov.app/) — Halal Uzbek Food Platform for Korea
-A full-stack food platform connecting the Uzbek community in South Korea with authentic halal Uzbek cuisine.
+Full-stack food ordering platform for the Uzbek community in South Korea.
 
-**My contributions:**
-- Designed and built the full-stack app end-to-end with Next.js
-- Implemented multi-country phone authentication (🇰🇷 +82 · 🇺🇿 +998 · 🇷🇺 +7) with OTP verification
-- Integrated Telegram OAuth as an alternative login method — targeting Uzbek expat users who rely on Telegram daily
-- **Built an AI assistant & chatbot** — users can ask questions about dishes, get recommendations, and place orders through a conversational interface powered by an LLM
-- Deployed and optimized on Vercel with internationalization support
+- Multi-country phone auth (+82 KR / +998 UZ) with OTP & Telegram OAuth
+- **AI:** RAG system over the menu database — chatbot answers dish queries with real-time context-aware recommendations
+- **Self-improvement:** User feedback and order patterns feed back into the model to continuously improve suggestions
 
-`Next.js` `Vercel` `Phone Auth` `Telegram OAuth` `AI Chatbot` `LLM` `i18n`
+`Next.js` `RAG` `LLM API` `AI Chatbot` `Telegram OAuth` `Vercel`
 
 ---
 
 ### [Hamyon](https://hamyon-six.vercel.app/) — Personal Finance Manager
-*"Pulingiz nazoratda"* — Your money under control. A personal finance tracking app built for Uzbek-speaking users.
+*"Pulingiz nazoratda"* — Your money under control.
 
-**My contributions:**
-- Architected and developed the full application from scratch
-- Built real-time expense tracking and budget monitoring features
-- Designed intuitive UX for financial overview and category-based spending analysis
-- **Implemented an AI assistant & chatbot** — users can query their finances in natural language (e.g. "How much did I spend on food this month?"), get AI-generated spending insights, and receive budget recommendations
-- Deployed on Vercel with a responsive mobile-first interface
+- Real-time expense tracking, budget monitoring, category-based spending analysis
+- **AI:** RAG-powered chatbot over transaction history — natural-language finance queries and AI-generated budget insights
+- **Self-improvement:** Learns from user corrections to continuously refine categorization accuracy and advice quality
 
-`Next.js` `Supabase` `Vercel` `AI Chatbot` `LLM` `Finance Dashboard`
+`Next.js` `Supabase` `RAG` `LLM API` `AI Chatbot` `Vercel`
 
 ---
 
 ### [Kotib](https://kotib-rouge.vercel.app/) — AI-Powered Personal Secretary
-*"Aqlli shaxsiy kotib"* — Smart personal secretary. An AI assistant and chatbot that handles scheduling, task management, and intelligent note-taking through natural conversation.
+*"Aqlli shaxsiy kotib"* — Smart personal secretary.
 
-**My contributions:**
-- **Built the AI assistant & chatbot core** — integrated LLM APIs to power natural language task creation, scheduling, and note management
-- Designed the agent pipeline: user message → intent parsing → structured action (create task / set reminder / generate note)
-- Implemented conversational memory so the chatbot maintains full context across sessions
-- Added proactive AI suggestions — the assistant recommends priorities and follow-ups based on the user's history
-- Full-stack development and deployment on Vercel
+- **AI agent pipeline:** user message → intent classification → action routing (task / reminder / note / query)
+- **Graph RAG** over the user's personal knowledge base for deep contextual understanding
+- **Self-improvement:** Tracks completed vs. missed tasks, adjusts proactive suggestions and reminder timing from observed behaviour
+- Persistent conversational memory across all sessions
 
-`Next.js` `LLM API` `AI Agent` `AI Chatbot` `Conversational AI` `Vercel`
+`Next.js` `Graph RAG` `LLM API` `AI Agent` `Conversational AI` `Vercel`
 
 ---
 
@@ -104,6 +104,17 @@ A full-stack food platform connecting the Uzbek community in South Korea with au
 
 ## 🛠️ Tools & Frameworks
 
+**AI Agents & LLMs**  
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/HuggingFace-FFD21F?style=flat&logo=huggingface&logoColor=black)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
+
+**Fine-Tuning & Self-Improvement**  
+![LoRA](https://img.shields.io/badge/LoRA%2FQLoRA-FF6B35?style=flat&logoColor=white)
+![RLHF](https://img.shields.io/badge/RLHF%2FDPO-8B5CF6?style=flat&logoColor=white)
+![NVIDIA](https://img.shields.io/badge/NVIDIA-76B900?style=flat&logo=nvidia&logoColor=white)
+
 **ML / DL**  
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
@@ -112,21 +123,18 @@ A full-stack food platform connecting the Uzbek community in South Korea with au
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
 
-**AI Agents & Backend**  
+**Backend & DevOps**  
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-
-**DevOps & Data**  
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat&logoColor=white)
 
 ---
 
 ## 📬 Contact
 
 - 🌐 **Portfolio:** [davronbek-portfolio.vercel.app](https://davronbek-portfolio.vercel.app)
+- 📄 **CV:** [Download CV](https://davronbek-portfolio.vercel.app/cv.pdf)
 - 💼 **LinkedIn:** [linkedin.com/in/davronbek-malikov](https://www.linkedin.com/in/davronbek-malikov)
 - 📧 **Email:** [davronbekmalikov96@gmail.com](mailto:davronbekmalikov96@gmail.com)
