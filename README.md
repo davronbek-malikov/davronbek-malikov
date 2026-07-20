@@ -33,6 +33,18 @@ Leading a team building production-grade autonomous AI agents and enterprise AI 
 
 ## 🚀 Projects
 
+### [Soccer xG Salary Predictor](https://github.com/davronbek-malikov/soccer-xG-salary_prediction) — ML Demo · [🟢 Live Demo](https://soccer-xg-salary-prediction.onrender.com)
+Industry-level ML pipeline predicting soccer player annual salaries from xG stats.
+
+- Zero data leakage: split → fit preprocessor on train only → no target imputation
+- Baseline → Improved (RF, XGBoost, LightGBM, GradientBoosting) → Ensemble (Stacking + Voting)
+- SHAP global + local explanations, Optuna hyperparameter tuning, end-to-end logging
+- **Deployed on Render · kept alive 24/7 via UptimeRobot**
+
+`Python` `XGBoost` `LightGBM` `SHAP` `Optuna` `Gradio` `Render` `UptimeRobot`
+
+---
+
 ### [Palov](https://www.palov.app/) — Halal Uzbek Food Platform for Korea
 Full-stack food ordering platform for the Uzbek community in South Korea.
 
