@@ -29,18 +29,6 @@ Leading a team building production-grade autonomous AI agents and enterprise AI 
 
 ---
 
-## 🤖 AI Agent Projects
-
-| Project | Description | Stack | Status |
-|---------|-------------|-------|--------|
-| **[VIP Agent](https://oasisvip.vercel.app)** | Orchestrator hub commanding sub-agents — market reports, RAG brain, KakaoTalk chatbot | Next.js · FastAPI · Supabase · Groq | 🟢 Live |
-| **[Law Agent](https://law-agent-jet.vercel.app)** | Semantic matching of Korean Supreme Court precedents with citability filter | Next.js · GPT-4o · pgvector | 🟢 Live |
-| **[Meeting Agent](https://meeting-agent-blue.vercel.app)** | Local transcription → structured minutes → 4-format export, fully on-prem | Python · faster-whisper · Claude | 🟢 Live |
-| **Digital Twins** | Per-employee AI proxy that learns and acts on behalf of the worker | FastAPI · Supabase | 🔵 Beta |
-| **Smart Local LLM** | LoRA fine-tuning + RAG → GGUF export → runs 100% locally via Ollama | Python · Qwen · LoRA · Ollama | 🔬 R&D |
-| **Enterprise Edition** | GitHub Actions CI/CD → push-to-deploy any agent on-prem or local PC | Docker · GitHub Actions · Ollama | ✅ Proven |
-
----
 
 ## 📄 Publications *(5 first-author)*
 
