@@ -30,6 +30,47 @@ Leading a team building production-grade autonomous AI agents and enterprise AI 
 ---
 
 
+## 🚀 Projects
+
+### [Palov](https://www.palov.app/) — Halal Uzbek Food Platform for Korea
+A full-stack food platform connecting the Uzbek community in South Korea with authentic halal Uzbek cuisine.
+
+**My contributions:**
+- Designed and built the full-stack app end-to-end with Next.js
+- Implemented multi-country phone authentication (🇰🇷 +82 · 🇺🇿 +998 · 🇷🇺 +7) with OTP verification
+- Integrated Telegram OAuth as an alternative login method — targeting Uzbek expat users who rely on Telegram daily
+- Deployed and optimized on Vercel with internationalization support
+
+`Next.js` `Vercel` `Phone Auth` `Telegram OAuth` `i18n`
+
+---
+
+### [Hamyon](https://hamyon-six.vercel.app/) — Personal Finance Manager
+*"Pulingiz nazoratda"* — Your money under control. A personal finance tracking app built for Uzbek-speaking users.
+
+**My contributions:**
+- Architected and developed the full application from scratch
+- Built real-time expense tracking and budget monitoring features
+- Designed intuitive UX for financial overview and category-based spending analysis
+- Deployed on Vercel with a responsive mobile-first interface
+
+`Next.js` `Supabase` `Vercel` `Finance Dashboard`
+
+---
+
+### [Kotib](https://kotib-rouge.vercel.app/) — AI-Powered Personal Secretary
+*"Aqlli shaxsiy kotib"* — Smart personal secretary. An AI assistant that handles scheduling, task management, and intelligent note-taking.
+
+**My contributions:**
+- Built the AI core — integrated LLM APIs to power natural language task creation and management
+- Designed the agent pipeline: user input → intent parsing → structured task/note output
+- Implemented conversational memory so the assistant maintains context across sessions
+- Full-stack development and deployment on Vercel
+
+`Next.js` `LLM API` `AI Agent` `Vercel` `Conversational AI`
+
+---
+
 ## 📄 Publications *(5 first-author)*
 
 1. **Predicting Soccer Player Salaries with Traditional and Automated ML** — *SCIE, Applied Sciences* · [DOI →](https://doi.org/10.3390/app15148108)  
