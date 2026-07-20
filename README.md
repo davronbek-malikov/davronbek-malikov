@@ -26,15 +26,8 @@ Experienced in the full AI stack: **Local LLM fine-tuning** (LoRA/QLoRA), **Grap
 
 ## 💼 Current Role
 
-**AI Engineer & Team Lead @ TripleH** *(Jan 2026 – Present)*
-
-| Product | Description |
-|---------|-------------|
-| **VIP Agent** | Centralized AI Orchestration Platform — controls a network of specialized sub-agents from a unified hub |
-| **Law Agent** | Smart Legal Chatbot using Mixture of Decisions across multiple LLMs for Korean Supreme Court precedents |
-| **Meeting Agent** | Smart Meeting Agent with Voice Recognition — on-premise transcription to structured minutes |
-| **Enterprise System** | On-premise platform — all agents run locally, no external API calls, full data privacy |
-| **Digital Workers** | Per-employee AI agents (Digital Twins) that learn and act autonomously on behalf of each worker |
+**AI Engineer & Team Lead @ TripleH** *(Jan 2026 – Present)*  
+Leading a team building production-grade autonomous AI agents and enterprise AI infrastructure.
 
 ---
 
