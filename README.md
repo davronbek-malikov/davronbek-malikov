@@ -45,6 +45,19 @@ Industry-level ML pipeline predicting soccer player annual salaries from xG stat
 
 ---
 
+### [Player Archetype Clustering](https://github.com/davronbek-malikov/soccer-player-clustering) — Unsupervised ML · [🟢 Live Demo](https://soccer-player-clustering.onrender.com)
+Companion project to the salary predictor — same dataset, unsupervised this time: discovers playing-style archetypes from performance stats alone, no labels or salary involved.
+
+- Algorithm bake-off: KMeans vs. Agglomerative vs. DBSCAN vs. Gaussian Mixture, scored on Silhouette / Davies-Bouldin / Calinski-Harabasz
+- DBSCAN empirically collapses to one dense cluster — documented as a real finding, not hidden
+- Rule-based archetype naming from cluster centroids: Elite Complete Forward, Clinical Poacher, Deep-Lying Playmaker & more
+- Cosine-similarity engine finds each player's closest statistical twins within their own archetype
+- Interactive Streamlit demo: classify any real or hypothetical player, see radar chart + PCA map
+
+`Python` `Scikit-learn` `Streamlit` `Plotly` `Render`
+
+---
+
 ### [Palov](https://www.palov.app/) — Halal Uzbek Food Platform for Korea
 Full-stack food ordering platform for the Uzbek community in South Korea.
 
