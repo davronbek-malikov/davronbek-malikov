@@ -45,13 +45,13 @@ Industry-level ML pipeline predicting soccer player annual salaries from xG stat
 
 ---
 
-### [Player Archetype Clustering](https://github.com/davronbek-malikov/soccer-player-clustering) — Unsupervised ML · [🟢 Live Demo](https://soccer-player-clustering.onrender.com)
-Companion project to the salary predictor — same dataset, unsupervised this time: discovers playing-style archetypes from performance stats alone, no labels or salary involved.
+### [TacticalDNA](https://github.com/davronbek-malikov/tactical-dna) — Unsupervised ML · [🟢 Live Demo](https://soccer-player-clustering.onrender.com)
+Companion project to the salary predictor — same dataset, unsupervised this time. Reads a player's on-pitch stats the way genetics reads a genome: no coach, no scout, no salary figure, just performance data discovering six playing identities on its own.
 
+- **The interesting part:** a blind stat line — 25 goals, 15 assists, no name attached — was matched to prime Messi's 2019/20 season at **98% cosine similarity**
 - Algorithm bake-off: KMeans vs. Agglomerative vs. DBSCAN vs. Gaussian Mixture, scored on Silhouette / Davies-Bouldin / Calinski-Harabasz
 - DBSCAN empirically collapses to one dense cluster — documented as a real finding, not hidden
 - Rule-based archetype naming from cluster centroids: Elite Complete Forward, Clinical Poacher, Deep-Lying Playmaker & more
-- Cosine-similarity engine finds each player's closest statistical twins within their own archetype
 - Interactive Streamlit demo: classify any real or hypothetical player, see radar chart + PCA map
 
 `Python` `Scikit-learn` `Streamlit` `Plotly` `Render`
