@@ -1,6 +1,6 @@
 # Hi, I'm Davronbek Malikov 👋
 
-**AI Engineer · ML/DL Engineer · Researcher · Team Lead**  
+**LLM & RAG Engineer · Agentic AI Engineer · ML & Deep Learning Engineer · Computer Vision · PhD**
 📍 Seoul, South Korea &nbsp;|&nbsp; 📧 davronbekmalikov96@gmail.com
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat&logo=vercel&logoColor=white)](https://davronbek-portfolio.vercel.app)
@@ -12,101 +12,100 @@
 
 ## 🧑‍💻 About Me
 
-PhD-level **AI Engineer** who builds autonomous agent systems that work in production. Currently leading the AI engineering team at **TripleH** — shipping agents for legal intelligence, financial analysis, meeting automation, and enterprise digital twins.
+AI engineer with a **PhD in AI Convergence Engineering** and **5 first-author publications**, working across the full stack — **classical machine learning, deep learning, computer vision and LLM systems**. I take models from data to production: data pipelines, feature engineering, training and tuning, explainability, evaluation, deployment and monitoring.
 
-Experienced in the full AI stack: **Local LLM fine-tuning** (LoRA/QLoRA), **Graph RAG** and standard RAG systems, **Mixture of Agents**, self-improving AI pipelines, and full-stack deployment on cloud and on-premise infrastructure.
-
-- 🤖 **AI Engineering:** Multi-agent orchestration, Mixture of Agents (MoA), centralized agent control, self-improvement loops
-- 🔬 **Research:** Supervised & Unsupervised ML (tabular), Computer Vision, LLMs, sports analytics
-- 🧠 **LLMs:** Local LLM deployment (Ollama), fine-tuning (LoRA/QLoRA/DPO/RLHF), Graph RAG, RAG pipelines
-- 🎓 **Teaching:** Advanced courses in ML, DL, NLP, and LLMs
+- 🧠 **LLM & post-training:** SFT, LoRA/QLoRA, DPO, RLHF (reward modeling, PPO, RLOO), quantization, local serving (vLLM, Ollama, llama.cpp)
+- 🔎 **RAG:** hybrid search (dense + BM25, RRF), cross-encoder reranking, GraphRAG, permission-aware retrieval, cited answers — pgvector, Qdrant
+- 🤖 **Agentic AI:** LangGraph, LangChain, multi-agent systems, human-in-the-loop, MCP, A2A
+- 📈 **Evaluation & observability:** LangSmith, Arize Phoenix, OpenTelemetry/Jaeger, Ragas, DeepEval, LLM-as-a-Judge
+- 📊 **Machine learning:** ensembles and stacking, AutoML, Optuna, SHAP, clustering, leakage-safe validation
+- 🔥 **Deep learning & computer vision:** PyTorch, TensorFlow/Keras, Transformers from scratch, CNNs, detection (YOLO), segmentation, OpenCV
+- 🚀 **MLOps:** MLflow, Weights & Biases, Docker, GitHub Actions, FastAPI serving, ONNX/TensorRT
 - 🌍 **Languages:** English · Uzbek · Turkish · Russian · Korean
 
 ---
 
 ## 💼 Current Role
 
-**AI Engineer & Team Lead @ TripleH** *(Jan 2026 – Present)*  
-Leading a team building production-grade autonomous AI agents and enterprise AI infrastructure.
+**AI Engineer & Team Lead @ TripleH** *(Dec 2025 – Present)*
+Leading the AI engineering team building production autonomous agent systems for enterprise clients: multi-agent orchestration, legal research, meeting intelligence and per-employee AI assistants — running fully on-premise on open-weight LLMs.
 
 ---
 
-## 🚀 Projects
+## 🚀 Featured Projects
 
-### [Soccer xG Salary Predictor](https://github.com/davronbek-malikov/soccer-xG-salary_prediction) — ML Demo · [🟢 Live Demo](https://soccer-xg-salary-prediction.onrender.com)
-Industry-level ML pipeline predicting soccer player annual salaries from xG stats.
+### 🤖 LLM, RAG & Agentic Systems
 
-- Zero data leakage: split → fit preprocessor on train only → no target imputation
-- Baseline → Improved (RF, XGBoost, LightGBM, GradientBoosting) → Ensemble (Stacking + Voting)
-- SHAP global + local explanations, Optuna hyperparameter tuning, end-to-end logging
-- **Deployed on Render · kept alive 24/7 via UptimeRobot**
+#### [ERA Academy](https://github.com/malikov-davronbek/ERA/tree/phase-1-foundation) — AI EdTech platform · [🟢 Live](https://era-academy.vercel.app)
+One provider-agnostic AI agent engine behind three role-scoped assistants (Student Tutor, Teacher Assistant, Admin Assistant).
+- Claude, OpenAI and local Ollama adapters with SSE streaming, usage tracking, and cost and rate limits
+- **Permission-aware RAG** on pgvector: access rules run inside the retrieval SQL query; answers cite their sources
+- Prompt-injection defense · **206 automated tests**, all passing
 
-`Python` `XGBoost` `LightGBM` `SHAP` `Optuna` `Gradio` `Render` `UptimeRobot`
+`Next.js 15` `TypeScript` `Prisma` `PostgreSQL + pgvector` `Claude API` `Ollama`
 
----
+#### [Touchline](https://github.com/davronbek-malikov/touchline) — AI scouting copilot for football
+Describe the player you need; get a ranked shortlist and a cited scouting report.
+- Claude agent on **LangGraph** over 7 schema-validated tools — the model never writes SQL
+- Human-in-the-loop shortlist approval with persisted checkpoints
+- **Hybrid RAG** (dense + BM25, RRF) in Qdrant with citations; DuckDB warehouse of 50,149 players + StatsBomb event data
+- Every run traced in **LangSmith**; 120-question golden set run as experiments; 102 automated tests
 
-### [TacticalDNA](https://github.com/davronbek-malikov/tactical-dna) — Unsupervised ML · [🟢 Live Demo](https://soccer-player-clustering.onrender.com)
-Companion project to the salary predictor — same dataset, unsupervised this time. Reads a player's on-pitch stats the way genetics reads a genome: no coach, no scout, no salary figure, just performance data discovering six playing identities on its own.
+`Claude API` `LangGraph` `LangSmith` `Qdrant` `DuckDB` `FastAPI` `Next.js`
 
-- **The interesting part:** a blind stat line — 25 goals, 15 assists, no name attached — was matched to prime Messi's 2019/20 season at **98% cosine similarity**
-- Algorithm bake-off: KMeans vs. Agglomerative vs. DBSCAN vs. Gaussian Mixture, scored on Silhouette / Davies-Bouldin / Calinski-Harabasz
-- DBSCAN empirically collapses to one dense cluster — documented as a real finding, not hidden
-- Rule-based archetype naming from cluster centroids: Elite Complete Forward, Clinical Poacher, Deep-Lying Playmaker & more
-- Interactive Streamlit demo: classify any real or hypothetical player, see radar chart + PCA map
+#### [TeachHelp](https://github.com/davronbek-malikov/Post_Training) — post-training an LLM end to end · [🟢 Live](https://teach-help.vercel.app)
+Qwen2.5 base → SFT → DPO → RLHF → deployment, with 14 models measured on the same 68-question held-out test.
+- SFT took Qwen2.5-1.5B from **15/68 to 44/68**
+- DPO implemented from scratch; v1's length bias diagnosed and fixed in v2 (44/68, all harmful and cheating requests refused)
+- RLHF with Bradley–Terry reward models and PPO/RLOO across 4 judges, with reward-hacking checks
 
-`Python` `Scikit-learn` `Streamlit` `Plotly` `Render`
+`PyTorch` `Transformers` `PEFT` `LoRA/QLoRA` `DPO` `PPO/RLOO` `Kaggle`
 
----
+#### [TACTIQ](https://github.com/davronbek-malikov/TACTIQ) — evidence-first football intelligence *(in development)*
+Ask football questions; get evidence, not guesses. Phase 1: a hand-written indexing pipeline (load → metadata → clean → token-based chunking → embeddings → Qdrant) with idempotent re-ingestion and tests for every step.
 
-### [Palov](https://www.palov.app/) — Halal Uzbek Food Platform for Korea
-Full-stack food ordering platform for the Uzbek community in South Korea.
+`Python` `Qdrant` `Sentence Transformers` `pytest`
 
-- Multi-country phone auth (+82 KR / +998 UZ) with OTP & Telegram OAuth
-- **AI:** RAG system over the menu database — chatbot answers dish queries with real-time context-aware recommendations
-- **Self-improvement:** User feedback and order patterns feed back into the model to continuously improve suggestions
+#### Portiq — multi-agent job hub · [🟢 Live preview](https://portiq-gamma.vercel.app)
+A LangGraph orchestrator routes 11 agents over Kafka and A2A, with a Judge agent, pgvector job matching, mock interviews in 4 languages, and OpenTelemetry + Jaeger tracing.
 
-`Next.js` `RAG` `LLM API` `AI Chatbot` `Telegram OAuth` `Vercel`
+`LangGraph` `Kafka` `A2A` `FastAPI` `PostgreSQL + pgvector` `OpenTelemetry`
 
----
+### 📊 Machine Learning & Deep Learning
 
-### [Hamyon](https://hamyon-six.vercel.app/) — Personal Finance Manager
-*"Pulingiz nazoratda"* — Your money under control.
+#### [LLM from Scratch](https://github.com/davronbek-malikov/LLM_Model) — GPT-style Transformer in PyTorch *(pretraining in progress)*
+- Decoder-only Transformer written from first principles: multi-head causal self-attention, MLP blocks, weight tying — verified with shape, random-init loss, overfit-one-batch and causality tests
+- Full pretraining pipeline: cleaning, filtering, MinHash near-duplicate detection, BPE tokenizer, warmup + cosine LR, gradient accumulation, bf16/fp16 mixed precision, resumable checkpoints, top-k/top-p sampling
 
-- Real-time expense tracking, budget monitoring, category-based spending analysis
-- **AI:** RAG-powered chatbot over transaction history — natural-language finance queries and AI-generated budget insights
-- **Self-improvement:** Learns from user corrections to continuously refine categorization accuracy and advice quality
+`PyTorch` `Transformers` `BPE` `Mixed Precision`
 
-`Next.js` `Supabase` `RAG` `LLM API` `AI Chatbot` `Vercel`
+#### [Soccer Player Salary Predictor](https://github.com/davronbek-malikov/soccer-xG-salary_prediction) — supervised ML · [🟢 Live](https://soccer-xg-salary-prediction.onrender.com)
+Leakage-safe pipeline: 21 engineered features → gradient boosting → stacking and voting ensembles, Optuna tuning, SHAP explanations. Linked to an SCIE paper (17% accuracy gain).
 
----
+`XGBoost` `LightGBM` `Optuna` `SHAP` `Gradio`
 
-### [Kotib](https://kotib-rouge.vercel.app/) — AI-Powered Personal Secretary
-*"Aqlli shaxsiy kotib"* — Smart personal secretary.
+#### [TacticalDNA](https://github.com/davronbek-malikov/tactical-dna) — unsupervised ML · [🟢 Live](https://soccer-player-clustering.onrender.com)
+Clusters 6,314 player-seasons into six playing archetypes. A blind stat line — 25 goals, 15 assists, no name attached — matched prime Messi's 2019/20 season at **98% cosine similarity**.
 
-- **AI agent pipeline:** user message → intent classification → action routing (task / reminder / note / query)
-- **Graph RAG** over the user's personal knowledge base for deep contextual understanding
-- **Self-improvement:** Tracks completed vs. missed tasks, adjusts proactive suggestions and reminder timing from observed behaviour
-- Persistent conversational memory across all sessions
+`Scikit-learn` `KMeans` `Streamlit` `Plotly`
 
-`Next.js` `Graph RAG` `LLM API` `AI Agent` `Conversational AI` `Vercel`
+### 🛍️ Full-Stack AI Products
+
+| Product | What it does | Live |
+|---|---|---|
+| **Palov** | Halal Uzbek food ordering in Korea; RAG chatbot over the menu | [palov.app](https://www.palov.app/) |
+| **Hamyon** | Personal finance manager; RAG chatbot over your transactions | [hamyon](https://hamyon-six.vercel.app/) |
+| **Kotib** | AI personal secretary; agent pipeline with Graph RAG and memory | [kotib](https://kotib-rouge.vercel.app/) |
 
 ---
 
 ## 📄 Publications *(5 first-author)*
 
-1. **Predicting Soccer Player Salaries with Traditional and Automated ML** — *SCIE, Applied Sciences* · [DOI →](https://doi.org/10.3390/app15148108)  
-   → 17% improvement in salary prediction accuracy
-
-2. **Beyond xG: Dual Prediction Model for Player Performance in European Soccer** — *SCIE, Applied Sciences* · [DOI →](https://doi.org/10.3390/app142210390)  
-   → 12% improvement in player performance prediction
-
-3. **Comparative Evaluation of ML Models for Soccer Injury Type Prediction** — *KSCIE* · [Link →](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003072688)  
-   → Novel injury prediction model using constructed features
-
-4. **ML on the Injury Prediction of Soccer Players** — *ISE@APSEC* · [PDF →](https://ceur-ws.org/Vol-3362/ISE2022_short02_Malikov_Application.pdf)  
-   → Injury prediction without GPS technology
-
-5. **Lattice-group structure in Cartesian product spaces** — *Journal of Computer Science* · [DOI →](https://thescipub.com/abstract/jcssp.2020.402.421)
+1. **Predicting Soccer Player Salaries with Both Traditional and Automated Machine Learning Approaches** — *Applied Sciences (SCIE), 2025* · [DOI →](https://doi.org/10.3390/app15148108)
+2. **Beyond xG: A Dual Prediction Model for Analyzing Player Performance Through Expected and Actual Goals in European Soccer Leagues** — *Applied Sciences (SCIE), 2024* · [DOI →](https://doi.org/10.3390/app142210390)
+3. **Comparative Evaluation of Machine Learning Models for Predicting Soccer Injury Types** — *KSCIE, 2024* · [Link →](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003072688)
+4. **The Application of Machine Learning on the Injury Prediction of Soccer Players** — *ISE@APSEC, 2022* · [PDF →](https://ceur-ws.org/Vol-3362/ISE2022_short02_Malikov_Application.pdf)
+5. **On the Construction and Properties of Lattice-Group Structure in Cartesian Product Spaces** — *Journal of Computer Science, 2020* · [DOI →](https://doi.org/10.3844/jcssp.2020.402.421)
 
 ---
 
@@ -120,36 +119,45 @@ Full-stack food ordering platform for the Uzbek community in South Korea.
 
 ---
 
-## 🛠️ Tools & Frameworks
+## 🛠️ Tech Stack
 
-**AI Agents & LLMs**  
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat&logoColor=white)
+**LLM, RAG & Agents**
+![Claude](https://img.shields.io/badge/Claude_API-D97757?style=flat&logo=anthropic&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat&logo=langchain&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
+![LangSmith](https://img.shields.io/badge/LangSmith-1C3C3C?style=flat&logo=langchain&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/HuggingFace-FFD21F?style=flat&logo=huggingface&logoColor=black)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat&logo=ollama&logoColor=white)
+![vLLM](https://img.shields.io/badge/vLLM-30A2FF?style=flat&logoColor=white)
+![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=flat&logoColor=white)
+![pgvector](https://img.shields.io/badge/pgvector-4169E1?style=flat&logo=postgresql&logoColor=white)
 
-**Fine-Tuning & Self-Improvement**  
+**Post-Training & Evaluation**
 ![LoRA](https://img.shields.io/badge/LoRA%2FQLoRA-FF6B35?style=flat&logoColor=white)
-![RLHF](https://img.shields.io/badge/RLHF%2FDPO-8B5CF6?style=flat&logoColor=white)
-![NVIDIA](https://img.shields.io/badge/NVIDIA-76B900?style=flat&logo=nvidia&logoColor=white)
+![DPO](https://img.shields.io/badge/DPO%2FRLHF-8B5CF6?style=flat&logoColor=white)
+![Arize Phoenix](https://img.shields.io/badge/Arize_Phoenix-6C2BD9?style=flat&logoColor=white)
+![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=flat&logo=opentelemetry&logoColor=white)
 
-**ML / DL**  
+**ML, Deep Learning & Computer Vision**
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?style=flat&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
 
-**Backend & Deployment**  
+**MLOps, Backend & Deployment**
+![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat&logo=mlflow&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
+![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat&logo=apachekafka&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
-![Render](https://img.shields.io/badge/Render-46E3B7?style=flat&logo=render&logoColor=white)
-![UptimeRobot](https://img.shields.io/badge/UptimeRobot-3BD671?style=flat&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
 
 ---
 
