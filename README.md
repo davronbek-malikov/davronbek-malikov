@@ -12,10 +12,10 @@
 
 ## 🧑‍💻 About Me
 
-AI engineer with a **PhD in AI Convergence Engineering** and **5 first-author publications**, working across the full stack — **classical machine learning, deep learning, computer vision and LLM systems**. I take models from data to production: data pipelines, feature engineering, training and tuning, explainability, evaluation, deployment and monitoring.
+AI engineer with a **PhD in AI Convergence Engineering** and **5 first-author publications**, working across the full stack: **classical machine learning, deep learning, computer vision and LLM systems**. I take models from data to production: data pipelines, feature engineering, training and tuning, explainability, evaluation, deployment and monitoring.
 
 - 🧠 **LLM & post-training:** SFT, LoRA/QLoRA, DPO, RLHF (reward modeling, PPO, RLOO), quantization, local serving (vLLM, Ollama, llama.cpp)
-- 🔎 **RAG:** hybrid search (dense + BM25, RRF), cross-encoder reranking, GraphRAG, permission-aware retrieval, cited answers — pgvector, Qdrant
+- 🔎 **RAG:** hybrid search (dense + BM25, RRF), cross-encoder reranking, GraphRAG, permission-aware retrieval, cited answers (pgvector, Qdrant)
 - 🤖 **Agentic AI:** LangGraph, LangChain, multi-agent systems, human-in-the-loop, MCP, A2A
 - 📈 **Evaluation & observability:** LangSmith, Arize Phoenix, OpenTelemetry/Jaeger, Ragas, DeepEval, LLM-as-a-Judge
 - 📊 **Machine learning:** ensembles and stacking, AutoML, Optuna, SHAP, clustering, leakage-safe validation
@@ -28,7 +28,7 @@ AI engineer with a **PhD in AI Convergence Engineering** and **5 first-author pu
 ## 💼 Current Role
 
 **AI Engineer & Team Lead @ TripleH** *(Dec 2025 – Present)*
-Leading the AI engineering team building production autonomous agent systems for enterprise clients: multi-agent orchestration, legal research, meeting intelligence and per-employee AI assistants — running fully on-premise on open-weight LLMs.
+Leading the AI engineering team building production autonomous agent systems for enterprise clients: multi-agent orchestration, legal research, meeting intelligence and per-employee AI assistants, all running fully on-premise on open-weight LLMs.
 
 ---
 
@@ -36,7 +36,7 @@ Leading the AI engineering team building production autonomous agent systems for
 
 ### 🤖 LLM, RAG & Agentic Systems
 
-#### [ERA Academy](https://github.com/malikov-davronbek/ERA/tree/phase-1-foundation) — AI EdTech platform · [🟢 Live](https://era-academy.vercel.app)
+#### [ERA Academy](https://github.com/malikov-davronbek/ERA/tree/phase-1-foundation): AI EdTech platform · [🟢 Live](https://era-academy.vercel.app)
 One provider-agnostic AI agent engine behind three role-scoped assistants (Student Tutor, Teacher Assistant, Admin Assistant).
 - Claude, OpenAI and local Ollama adapters with SSE streaming, usage tracking, and cost and rate limits
 - **Permission-aware RAG** on pgvector: access rules run inside the retrieval SQL query; answers cite their sources
@@ -44,16 +44,16 @@ One provider-agnostic AI agent engine behind three role-scoped assistants (Stude
 
 `Next.js 15` `TypeScript` `Prisma` `PostgreSQL + pgvector` `Claude API` `Ollama`
 
-#### [Touchline](https://github.com/davronbek-malikov/touchline) — AI scouting copilot for football
+#### [Touchline](https://github.com/davronbek-malikov/touchline): AI scouting copilot for football
 Describe the player you need; get a ranked shortlist and a cited scouting report.
-- Claude agent on **LangGraph** over 7 schema-validated tools — the model never writes SQL
+- Claude agent on **LangGraph** over 7 schema-validated tools, the model never writes SQL
 - Human-in-the-loop shortlist approval with persisted checkpoints
 - **Hybrid RAG** (dense + BM25, RRF) in Qdrant with citations; DuckDB warehouse of 50,149 players + StatsBomb event data
 - Every run traced in **LangSmith**; 120-question golden set run as experiments; 102 automated tests
 
 `Claude API` `LangGraph` `LangSmith` `Qdrant` `DuckDB` `FastAPI` `Next.js`
 
-#### [TeachHelp](https://github.com/davronbek-malikov/Post_Training) — post-training an LLM end to end · [🟢 Live](https://teach-help.vercel.app)
+#### [TeachHelp](https://github.com/davronbek-malikov/Post_Training): post-training an LLM end to end · [🟢 Live](https://teach-help.vercel.app)
 Qwen2.5 base → SFT → DPO → RLHF → deployment, with 14 models measured on the same 68-question held-out test.
 - SFT took Qwen2.5-1.5B from **15/68 to 44/68**
 - DPO implemented from scratch; v1's length bias diagnosed and fixed in v2 (44/68, all harmful and cheating requests refused)
@@ -61,31 +61,31 @@ Qwen2.5 base → SFT → DPO → RLHF → deployment, with 14 models measured on
 
 `PyTorch` `Transformers` `PEFT` `LoRA/QLoRA` `DPO` `PPO/RLOO` `Kaggle`
 
-#### [TACTIQ](https://github.com/davronbek-malikov/TACTIQ) — evidence-first football intelligence *(in development)*
+#### [TACTIQ](https://github.com/davronbek-malikov/TACTIQ): evidence-first football intelligence *(in development)*
 Ask football questions; get evidence, not guesses. Phase 1: a hand-written indexing pipeline (load → metadata → clean → token-based chunking → embeddings → Qdrant) with idempotent re-ingestion and tests for every step.
 
 `Python` `Qdrant` `Sentence Transformers` `pytest`
 
-#### Portiq — multi-agent job hub · [🟢 Live preview](https://portiq-gamma.vercel.app)
+#### Portiq: multi-agent job hub · [🟢 Live preview](https://portiq-gamma.vercel.app)
 A LangGraph orchestrator routes 11 agents over Kafka and A2A, with a Judge agent, pgvector job matching, mock interviews in 4 languages, and OpenTelemetry + Jaeger tracing.
 
 `LangGraph` `Kafka` `A2A` `FastAPI` `PostgreSQL + pgvector` `OpenTelemetry`
 
 ### 📊 Machine Learning & Deep Learning
 
-#### [LLM from Scratch](https://github.com/davronbek-malikov/LLM_Model) — GPT-style Transformer in PyTorch *(pretraining in progress)*
-- Decoder-only Transformer written from first principles: multi-head causal self-attention, MLP blocks, weight tying — verified with shape, random-init loss, overfit-one-batch and causality tests
+#### [LLM from Scratch](https://github.com/davronbek-malikov/LLM_Model): GPT-style Transformer in PyTorch *(pretraining in progress)*
+- Decoder-only Transformer written from first principles: multi-head causal self-attention, MLP blocks, weight tying, verified with shape, random-init loss, overfit-one-batch and causality tests
 - Full pretraining pipeline: cleaning, filtering, MinHash near-duplicate detection, BPE tokenizer, warmup + cosine LR, gradient accumulation, bf16/fp16 mixed precision, resumable checkpoints, top-k/top-p sampling
 
 `PyTorch` `Transformers` `BPE` `Mixed Precision`
 
-#### [Soccer Player Salary Predictor](https://github.com/davronbek-malikov/soccer-xG-salary_prediction) — supervised ML · [🟢 Live](https://soccer-xg-salary-prediction.onrender.com)
+#### [Soccer Player Salary Predictor](https://github.com/davronbek-malikov/soccer-xG-salary_prediction): supervised ML · [🟢 Live](https://soccer-xg-salary-prediction.onrender.com)
 Leakage-safe pipeline: 21 engineered features → gradient boosting → stacking and voting ensembles, Optuna tuning, SHAP explanations. Linked to an SCIE paper (17% accuracy gain).
 
 `XGBoost` `LightGBM` `Optuna` `SHAP` `Gradio`
 
-#### [TacticalDNA](https://github.com/davronbek-malikov/tactical-dna) — unsupervised ML · [🟢 Live](https://soccer-player-clustering.onrender.com)
-Clusters 6,314 player-seasons into six playing archetypes. A blind stat line — 25 goals, 15 assists, no name attached — matched prime Messi's 2019/20 season at **98% cosine similarity**.
+#### [TacticalDNA](https://github.com/davronbek-malikov/tactical-dna): unsupervised ML · [🟢 Live](https://soccer-player-clustering.onrender.com)
+Clusters 6,314 player-seasons into six playing archetypes. A blind stat line (25 goals, 15 assists, no name attached) matched prime Messi's 2019/20 season at **98% cosine similarity**.
 
 `Scikit-learn` `KMeans` `Streamlit` `Plotly`
 
@@ -101,11 +101,11 @@ Clusters 6,314 player-seasons into six playing archetypes. A blind stat line —
 
 ## 📄 Publications *(5 first-author)*
 
-1. **Predicting Soccer Player Salaries with Both Traditional and Automated Machine Learning Approaches** — *Applied Sciences (SCIE), 2025* · [DOI →](https://doi.org/10.3390/app15148108)
-2. **Beyond xG: A Dual Prediction Model for Analyzing Player Performance Through Expected and Actual Goals in European Soccer Leagues** — *Applied Sciences (SCIE), 2024* · [DOI →](https://doi.org/10.3390/app142210390)
-3. **Comparative Evaluation of Machine Learning Models for Predicting Soccer Injury Types** — *KSCIE, 2024* · [Link →](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003072688)
-4. **The Application of Machine Learning on the Injury Prediction of Soccer Players** — *ISE@APSEC, 2022* · [PDF →](https://ceur-ws.org/Vol-3362/ISE2022_short02_Malikov_Application.pdf)
-5. **On the Construction and Properties of Lattice-Group Structure in Cartesian Product Spaces** — *Journal of Computer Science, 2020* · [DOI →](https://doi.org/10.3844/jcssp.2020.402.421)
+1. **Predicting Soccer Player Salaries with Both Traditional and Automated Machine Learning Approaches**: *Applied Sciences (SCIE), 2025* · [DOI →](https://doi.org/10.3390/app15148108)
+2. **Beyond xG: A Dual Prediction Model for Analyzing Player Performance Through Expected and Actual Goals in European Soccer Leagues**: *Applied Sciences (SCIE), 2024* · [DOI →](https://doi.org/10.3390/app142210390)
+3. **Comparative Evaluation of Machine Learning Models for Predicting Soccer Injury Types**: *KSCIE, 2024* · [Link →](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003072688)
+4. **The Application of Machine Learning on the Injury Prediction of Soccer Players**: *ISE@APSEC, 2022* · [PDF →](https://ceur-ws.org/Vol-3362/ISE2022_short02_Malikov_Application.pdf)
+5. **On the Construction and Properties of Lattice-Group Structure in Cartesian Product Spaces**: *Journal of Computer Science, 2020* · [DOI →](https://doi.org/10.3844/jcssp.2020.402.421)
 
 ---
 
