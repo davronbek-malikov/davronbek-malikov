@@ -1,6 +1,6 @@
 # Hi, I'm Davronbek Malikov 👋
 
-**LLM & RAG Engineer · Agentic AI Engineer · ML & Deep Learning Engineer · Computer Vision · PhD**
+**ML / LLM & RAG Engineer | Ph.D.**
 📍 Seoul, South Korea &nbsp;|&nbsp; 📧 davronbekmalikov96@gmail.com
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat&logo=vercel&logoColor=white)](https://davronbek-portfolio.vercel.app)
