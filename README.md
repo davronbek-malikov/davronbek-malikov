@@ -12,7 +12,11 @@
 
 ## 🧑‍💻 About Me
 
-AI engineer with a **PhD in AI Convergence Engineering** and **5 first-author publications**, working across the full stack: **classical machine learning, deep learning, computer vision and LLM systems**. I take models from data to production: data pipelines, feature engineering, training and tuning, explainability, evaluation, deployment and monitoring.
+**AI Engineer & Team Lead** with a **Ph.D. in AI Convergence Engineering**, leading the design and development of **on-premise multi-agent AI systems** for enterprise clients: system architecture, LLM orchestration, RAG pipelines, agent workflows, and observability with LangGraph, LangSmith and Arize Phoenix.
+
+I post-train LLMs with **SFT, LoRA, QLoRA, DPO and RLHF** on limited GPU (a Qwen2.5-1.5B model went from **22% to 65%** accuracy on a held-out bilingual teaching test), optimize inference with **4-bit quantization (GGUF, AWQ, GPTQ)** so models run on small on-premise servers, and build enterprise knowledge systems with **hybrid RAG and GraphRAG**.
+
+On the ML side I build end-to-end prediction models (feature engineering, leakage-safe validation, XGBoost, LightGBM, stacking, Optuna, SHAP). **5 first-author papers**, including 2 in SCIE journals, with published models improving prediction accuracy by up to 17%.
 
 - 🧠 **LLM & post-training:** SFT, LoRA/QLoRA, DPO, RLHF (reward modeling, PPO, RLOO), quantization, local serving (vLLM, Ollama, llama.cpp)
 - 🔎 **RAG:** hybrid search (dense + BM25, RRF), cross-encoder reranking, GraphRAG, permission-aware retrieval, cited answers (pgvector, Qdrant)
