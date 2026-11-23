@@ -22,7 +22,7 @@ On the **LLM** side, I lead on-premise **multi-agent systems** for enterprise cl
 - 📈 **Evaluation & observability:** LangSmith, Arize Phoenix, OpenTelemetry/Jaeger, Ragas, DeepEval, LLM-as-a-Judge
 - 📊 **Machine learning:** ensembles and stacking, AutoML, Optuna, SHAP, clustering, leakage-safe validation
 - 🔥 **Deep learning & computer vision:** PyTorch, TensorFlow/Keras, Transformers from scratch, CNNs, detection (YOLO), segmentation, OpenCV
-- 🚀 **MLOps:** MLflow, Weights & Biases, Docker, GitHub Actions, FastAPI serving, ONNX/TensorRT
+- 🚀 **MLOps & Cloud:** Docker, AWS, S3, MinIO, MLflow, Weights & Biases, GitHub Actions (CI/CD), FastAPI serving, ONNX/TensorRT
 - 🌍 **Languages:** English · Uzbek · Turkish · Russian · Korean
 
 ---
@@ -157,6 +157,9 @@ Clusters 6,314 player-seasons into six playing archetypes. A blind stat line (25
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
 ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat&logo=apachekafka&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)
+![Amazon S3](https://img.shields.io/badge/Amazon_S3-569A31?style=flat&logo=amazons3&logoColor=white)
+![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=flat&logo=minio&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
