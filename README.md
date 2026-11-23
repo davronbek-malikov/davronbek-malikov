@@ -14,7 +14,7 @@
 
 **AI Engineer & Team Lead** with a **Ph.D. in AI Convergence Engineering**. I build end-to-end **machine learning** systems: predictive models with supervised learning, gradient boosting (XGBoost, LightGBM) and stacking ensembles, **deep learning and computer vision**, with leakage-safe validation, Optuna tuning and SHAP explainability. **5 first-author papers** (2 in SCIE journals), with published models improving prediction accuracy by up to 17% and deployed as live apps.
 
-On the **LLM** side, I lead on-premise **multi-agent systems** for enterprise clients: post-training with SFT, LoRA/QLoRA and DPO on limited GPU (a Qwen2.5-1.5B model went from **22% to 65%** on a held-out test), 4-bit quantization (GGUF, AWQ, GPTQ) for small servers, and **hybrid RAG and GraphRAG**.
+On the **LLM** side, I lead on-premise **multi-agent systems** for enterprise clients: post-training with SFT, LoRA/QLoRA and DPO on limited GPU (a Qwen2.5-1.5B model went from **22% to 65%** on a held-out test), compressing LLMs into **small, quantized models for edge devices** and small servers (GGUF, AWQ, GPTQ) while keeping most of the original performance, and **hybrid RAG and GraphRAG**.
 
 - 🧠 **LLM & post-training:** SFT, LoRA/QLoRA, DPO, RLHF (reward modeling, PPO, RLOO), quantization, local serving (vLLM, Ollama, llama.cpp)
 - 🔎 **RAG:** hybrid search (dense + BM25, RRF), cross-encoder reranking, GraphRAG, permission-aware retrieval, cited answers (pgvector, Qdrant)
