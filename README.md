@@ -12,11 +12,9 @@
 
 ## 🧑‍💻 About Me
 
-**AI Engineer & Team Lead** with a **Ph.D. in AI Convergence Engineering**, leading the design and development of **on-premise multi-agent AI systems** for enterprise clients: system architecture, LLM orchestration, RAG pipelines, agent workflows, and observability with LangGraph, LangSmith and Arize Phoenix.
+**AI Engineer & Team Lead** with a **Ph.D. in AI Convergence Engineering**. I build end-to-end **machine learning** systems: predictive models with supervised learning, gradient boosting (XGBoost, LightGBM) and stacking ensembles, **deep learning and computer vision**, with leakage-safe validation, Optuna tuning and SHAP explainability. **5 first-author papers** (2 in SCIE journals), with published models improving prediction accuracy by up to 17% and deployed as live apps.
 
-I post-train LLMs with **SFT, LoRA, QLoRA, DPO and RLHF** on limited GPU (a Qwen2.5-1.5B model went from **22% to 65%** accuracy on a held-out bilingual teaching test), optimize inference with **4-bit quantization (GGUF, AWQ, GPTQ)** so models run on small on-premise servers, and build enterprise knowledge systems with **hybrid RAG and GraphRAG**.
-
-On the ML side I build end-to-end prediction models (feature engineering, leakage-safe validation, XGBoost, LightGBM, stacking, Optuna, SHAP). **5 first-author papers**, including 2 in SCIE journals, with published models improving prediction accuracy by up to 17%.
+On the **LLM** side, I lead on-premise **multi-agent systems** for enterprise clients: post-training with SFT, LoRA/QLoRA and DPO on limited GPU (a Qwen2.5-1.5B model went from **22% to 65%** on a held-out test), 4-bit quantization (GGUF, AWQ, GPTQ) for small servers, and **hybrid RAG and GraphRAG**.
 
 - 🧠 **LLM & post-training:** SFT, LoRA/QLoRA, DPO, RLHF (reward modeling, PPO, RLOO), quantization, local serving (vLLM, Ollama, llama.cpp)
 - 🔎 **RAG:** hybrid search (dense + BM25, RRF), cross-encoder reranking, GraphRAG, permission-aware retrieval, cited answers (pgvector, Qdrant)
