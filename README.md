@@ -17,7 +17,8 @@
 On the **LLM** side, I lead on-premise **multi-agent systems** for enterprise clients: post-training with SFT, LoRA/QLoRA and DPO on limited GPU (a Qwen2.5-1.5B model went from **22% to 65%** on a held-out test), compressing LLMs into **small, quantized models for edge devices** and small servers (GGUF, AWQ, GPTQ) while keeping most of the original performance, and **hybrid RAG and GraphRAG**.
 
 - 🧠 **LLM & post-training:** SFT, LoRA/QLoRA, DPO, RLHF (reward modeling, PPO, RLOO), quantization, local serving (vLLM, Ollama, llama.cpp)
-- 🔎 **RAG:** hybrid search (dense + BM25, RRF), cross-encoder reranking, GraphRAG, permission-aware retrieval, cited answers (pgvector, Qdrant)
+- 🔎 **RAG:** document parsing and chunking pipelines, hybrid search (dense + BM25, RRF), cross-encoder reranking, permission-aware retrieval, cited answers, RAG evaluation (pgvector, Qdrant, Milvus)
+- 🕸️ **Knowledge graphs:** GraphRAG, knowledge graph construction, ontology modeling, Neo4j (Cypher)
 - 🤖 **Agentic AI:** LangGraph, LangChain, multi-agent systems, human-in-the-loop, MCP, A2A
 - 📈 **Evaluation & observability:** LangSmith, Arize Phoenix, OpenTelemetry/Jaeger, Ragas, DeepEval, LLM-as-a-Judge
 - 📊 **Machine learning:** ensembles and stacking, AutoML, Optuna, SHAP, clustering, leakage-safe validation
